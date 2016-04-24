@@ -4,6 +4,8 @@ import java.text.NumberFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * Created by User on 2016/4/18.
@@ -24,5 +26,10 @@ public class HelloWorld {
         System.out.println("aaa");
         assert a < 0: a ;
         System.out.println("bbb");
+        Logger.getGlobal().info("llll");
+        Logger.getGlobal().setLevel(Level.OFF);
+        Logger.getGlobal().info("sasas");
+        Logger.getGlobal().setLevel(Level.INFO);
+        Logger.getGlobal().info("dsdsfsdf");
     }
 }
